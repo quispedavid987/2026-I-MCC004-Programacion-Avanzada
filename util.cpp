@@ -43,8 +43,8 @@ double valor_absoluto(double x) {
     return (x < 0) ? -x : x; 
 }
 // 10 Miranda Zarate Jorge Luis <mirandazaratejorge@gmail.com>,
-unsigned int factorial(unsigned int number){
-    unsigned int result = 1;
+U1 factorial(U1 number){
+    U1 result = 1;
     for(int i=number; i > 0; i--){
         result *= i;
     }
