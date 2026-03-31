@@ -4,8 +4,8 @@
 
 // 3 Castro Chaupis, Armando Cristhian <armandocristhiancastrochaupis@gmail.com>,
 using T3F = float;
-
-
+using T12 = double;
+using T14 = float;
 using T1  = int32_t;
 using T5 = double;
 using T16 = double;

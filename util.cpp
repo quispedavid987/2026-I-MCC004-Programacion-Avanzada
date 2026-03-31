@@ -8,13 +8,6 @@ T1 suma(T1 x, T1 y) {
 }
 
 // 1 Alvarez Cadillo, Michell Adrian <<michell.aac.1106@gmail.com>,
-int resta(int x, int y) {
-    return x - y;
-}
-
-
-
-
 T1 resta(T1 x, T1 y) {
     return x - y;
 }
@@ -48,10 +41,10 @@ T5 raizCuadrada(T5 x) {
 // 6 Díaz Vega Greta Solange <gretadiaz01@gmail.com>
 
 // 7 DÍAZ VEGA OLENKA HELENE <olenka.diaz.v@uni.pe>
-int exponencial(int x, int y) {
-    int resultado = 1;
+T1 exponencial(T1 x, T1 y) {
+    T1 resultado = 1;
 
-    for (int i = 0; i < y; i++) {
+    for (T1 i = 0; i < y; i++) {
         resultado *= x;
     }
 
@@ -87,7 +80,7 @@ T12 Promedio(T12 x0, T12 y0) {
     }
 
 // 14 Tellez Heredia Jhon <phyjhon@gmail.com>,
-F14 porcentaje(T14 a14, T14 b14) {
+T14 porcentaje(T14 a14, T14 b14) {
     return ((a14 - b14)/b14)*100;
 }
 // 15 Vilca Aguilar Luis Angel <luisangelvilca2@gmail.com>,

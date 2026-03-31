@@ -71,13 +71,13 @@ int main() {
     cout << "David Quispe: " << p0 << endl;
 
     // 13 Suarez Maciel Susana Isabel <susana.suarez.maciel@gmail.com>
-    int x13 = 8;
-    int result = cuadrado(x13);
+    T1 x13 = 8;
+    T1 result = cuadrado(x13);
     cout << "Suarez Maciel Susana Isabel: El cuadrado de: " << x13 << " es " << result << endl;
     
     // 14 Tellez Heredia Jhon <phyjhon@gmail.com>,
     T14 a14 = 1, b14 = 2;
-    F14 c14 = porcentaje(a14, b14);
+    T14 c14 = porcentaje(a14, b14);
     cout << "porcentaje: " << c14 << endl;
     // 15 Vilca Aguilar Luis Angel <luisangelvilca2@gmail.com>,
     // Factorial
@@ -92,8 +92,8 @@ int main() {
     // 20 Segura Nuñez Alex Ernesto <alex.segura.nunez@gmail.com>
 
     // 21 Selis Vasquez Luis Antonio <luisanonioselisvasquez@gmail.com>
-    T1 a1 = 5, b1 = 6; 
-    T1 r0 = (a1*a1 + b1*b1)/(a1 + b1); 
+    T1 a21 = 5, b21 = 6; 
+    T1 r0 = (a21*a21 + b21*b21)/(a21 + b21); 
     cout << r0 << endl;
     
     return 0;

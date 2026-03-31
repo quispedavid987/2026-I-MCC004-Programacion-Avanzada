@@ -6,8 +6,6 @@
 T1 suma(T1 x, T1 y);
 
 // 1 Alvarez Cadillo, Michell Adrian <<michell.aac.1106@gmail.com>,
-int resta(int x, int y);
-
 T1 resta(T1 x, T1 y);
 
 // 2 Bernaola Gayoso César Raúl <bernaolacesar@gmail.com>,
@@ -35,13 +33,13 @@ U1 factorial(U1 number);
 // 11 Oscar Toledo Guerrero <tgoscar@gmail.com>
 
 // 12 Quispe Calloapaza, David Saul <quispedavid987@gmail.com>
-double Promedio(double x0, double y0);
+T12 Promedio(T12 x0, T12 y0);
 
 // 13 Suarez Maciel Susana Isabel <susana.suarez.maciel@gmail.com>
-    T1 cuadrado(T1 x13);
+T1 cuadrado(T1 x13);
 
 // 14 Tellez Heredia Jhon <phyjhon@gmail.com>,
-F14 porcentaje(T14 a14, T14 b14);
+T14 porcentaje(T14 a14, T14 b14);
 // 15 Vilca Aguilar Luis Angel <luisangelvilca2@gmail.com>,
 T1 fact(T1 n);
 
