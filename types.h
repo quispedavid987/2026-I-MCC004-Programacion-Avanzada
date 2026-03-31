@@ -4,6 +4,7 @@
 using T12 = double;
 
 using T1 = int;
+using T5 = double;
 using T16 = double;
 
 using U1 =  unsigned int;
