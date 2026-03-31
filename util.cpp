@@ -24,6 +24,13 @@ int suma(int x, int y) {
 // 9 Lopez Flores Royer Amed <roamlofl9@gmail.com>
 
 // 10 Miranda Zarate Jorge Luis <mirandazaratejorge@gmail.com>,
+unsigned int factorial(unsigned int number){
+    unsigned int result = 1;
+    for(int i=number; i > 0; i--){
+        result *= i;
+    }
+    return result;
+}
 
 // 11 Oscar Toledo Guerrero <tgoscar@gmail.com>
 

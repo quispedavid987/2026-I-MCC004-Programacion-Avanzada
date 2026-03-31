@@ -36,10 +36,13 @@ int main() {
     // 9 Lopez Flores Royer Amed <roamlofl9@gmail.com>
 
     // 10 Miranda Zarate Jorge Luis <mirandazaratejorge@gmail.com>,
+    unsigned int u0 = 10;
+    cout << "Demo Miranda Zarate Jorge: " << u0 << "! = " << factorial(u0) << endl;
 
     // 11 Oscar Toledo Guerrero <tgoscar@gmail.com>
 
     // 12 Quispe Calloapaza, David Saul <quispedavid987@gmail.com>
+
 
     // 13 Suarez Maciel Susana Isabel <susana.suarez.maciel@gmail.com>
 
