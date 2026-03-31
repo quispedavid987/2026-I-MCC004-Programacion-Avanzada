@@ -26,7 +26,7 @@ double raizCuadrada(double x);
 double valor_absoluto(double x);
 
 // 10 Miranda Zarate Jorge Luis <mirandazaratejorge@gmail.com>,
-unsigned int factorial(unsigned int number);
+U1 factorial(U1 number);
 
 // 11 Oscar Toledo Guerrero <tgoscar@gmail.com>
 
