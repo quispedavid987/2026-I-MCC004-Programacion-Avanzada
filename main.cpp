@@ -25,7 +25,9 @@ int main() {
     
     // 5 Diaz Tapia Adderly Orlando <adderly.diaz.tapia@gmail.com>
     // Raiz cuadrada
-
+    double x5 = 16.0;
+    double a5 = raizCuadrada(x5);
+    cout << "Diaz Tapia Adderly Orlando: " << a5 << endl;
     // 6 Díaz Vega Greta Solange <gretadiaz01@gmail.com>
     // Modulo
 

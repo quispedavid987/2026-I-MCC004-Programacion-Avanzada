@@ -1,4 +1,6 @@
 #include "util.h"
+#include <cmath>
+#include <iostream>
 
 // 0. Ernesto Cuadros <ecuadros@spc.org.pe>
 int suma(int x, int y) {
@@ -14,7 +16,13 @@ int suma(int x, int y) {
 // 4 Castro Galindo Carlo André <carlocastrogalindo@gmail.com>,
 
 // 5 Diaz Tapia Adderly Orlando <adderly.diaz.tapia@gmail.com>
-
+double raizCuadrada(double x) {
+    if (x < 0) {
+     std::cout << "Error: No se puede calcular la raíz cuadrada de un número negativo." << std::endl;
+     return -1; 
+    }
+    return sqrt(x);
+}
 // 6 Díaz Vega Greta Solange <gretadiaz01@gmail.com>
 
 // 7 DÍAZ VEGA OLENKA HELENE <olenka.diaz.v@uni.pe>
