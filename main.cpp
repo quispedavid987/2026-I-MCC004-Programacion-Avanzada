@@ -4,7 +4,7 @@ using namespace std;
 
 // g++ -std=c++17 main.cpp util.cpp -o main
 int main() {
-
+    
     // 0. Ernesto Cuadros <ecuadros@spc.org.pe>
     int x0 = 1, y0 = 2;
     int a0 = suma(x0, y0);
@@ -17,6 +17,7 @@ int main() {
     cout << "Michell Alvarez-Cadillo: " << a1 << endl;
 
     // 2 Bernaola Gayoso César Raúl <bernaolacesar@gmail.com>,
+    cout << "Bernaola Gayoso Cesar Raul: " << multiplicacion(x0, y0) << endl;
 
     // 3 Castro Chaupis, Armando Cristhian <armandocristhiancastrochaupis@gmail.com>,
 
