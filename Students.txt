@@ -1,5 +1,5 @@
 0 Ernesto Cuadros-Vargas <ecuadros@spc.org.pe>,
-1 Alvarez Cadillo, Michell Adrian
+1 Alvarez Cadillo, Michell Adrian <<michell.aac.1106@gmail.com>,
 2 Bernaola Gayoso César Raúl <bernaolacesar@gmail.com>,
 3 Castro Chaupis, Armando Cristhian <armandocristhiancastrochaupis@gmail.com>,
 4 Castro Galindo Carlo André
