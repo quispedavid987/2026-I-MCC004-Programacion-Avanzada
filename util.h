@@ -12,7 +12,7 @@ int suma(int x, int y);
 // 4 Castro Galindo Carlo André <carlocastrogalindo@gmail.com>,
 
 // 5 Diaz Tapia Adderly Orlando <adderly.diaz.tapia@gmail.com>
-
+double raizCuadrada(double x);
 // 6 Díaz Vega Greta Solange <gretadiaz01@gmail.com>
 
 // 7 DÍAZ VEGA OLENKA HELENE <olenka.diaz.v@uni.pe>
