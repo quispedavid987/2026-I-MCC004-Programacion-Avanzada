@@ -19,7 +19,10 @@ int multiplicacion(int x, int y) {
 }
 
 // 3 Castro Chaupis, Armando Cristhian <armandocristhiancastrochaupis@gmail.com>,
-
+float dividir(int x,int y)
+{
+    return (float)x/(float)y;
+}
 // 4 Castro Galindo Carlo André <carlocastrogalindo@gmail.com>,
 int potencia(int base, int exponente) {
     int resultado = 1;
