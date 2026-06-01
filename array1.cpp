@@ -11,7 +11,7 @@ void CreateArray1(TP *&pArray, size_t n) {
 void ReadArray1(TP *pArray, size_t n) {
     for (size_t i = 0; i < n; i++) {
         cout << "Ingrese un numero: ";
-    cin >> pArray[i];
+        cin >> pArray[i];
   }
 }
 
