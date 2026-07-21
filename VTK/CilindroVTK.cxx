@@ -8,39 +8,62 @@
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkRenderer.h>
+#include <vtkSphereSource.h> // Para esferas
+#include <vtkTransform.h> // Para pos
+
 
 int main(int, char*[]) {
-    // 1. Crear una paleta de colores
+    // Colores
     vtkNew<vtkNamedColors> colors;
 
-    // 2. FUENTE (Source): Crear el objeto geométrico (Cilindro)
+    // CILINDRO
+    // Forma
     // Esto genera los datos matemáticos puros (vértices y polígonos)
     vtkNew<vtkCylinderSource> cylinder;
-    cylinder->SetResolution(8); // Cilindro octagonal
+    cylinder->SetHeight(3.0); // seteando geometria
+    cylinder->SetResolution(120); // RESOLUCION DEL RENDERIZADO
 
-    // 3. MAPEADOR (Mapper): Convierte los datos matemáticos en datos gráficos
+    // Convierte los datos matemáticos en datos gráficos
     vtkNew<vtkPolyDataMapper> cylinderMapper;
     cylinderMapper->SetInputConnection(cylinder->GetOutputPort());
 
-    // 4. ACTOR: Representa el objeto en la escena (geometría + propiedades visuales)
+    // geometría + propiedades visuales
     vtkNew<vtkActor> cylinderActor;
     cylinderActor->SetMapper(cylinderMapper);
     cylinderActor->GetProperty()->SetColor(colors->GetColor3d("Tomato").GetData());
     cylinderActor->RotateX(30.0);
     cylinderActor->RotateY(-45.0);
 
-    // 5. RENDERIZADOR (Renderer): Crea la escena y añade los actores
+    // ESFERA
+    vtkNew<vtkSphereSource> sphere;
+    sphere->SetRadius(0.5);
+    sphere->SetPhiResolution(20);
+    sphere->SetThetaResolution(20);
+
+    vtkNew<vtkTransform> transform;
+    transform->Translate(0.0, 0.0, 1.5);
+
+    vtkNew<vtkPolyDataMapper> sphereMapper;
+    sphereMapper->SetInputConnection(sphere->GetOutputPort());
+
+    vtkNew<vtkActor> sphereActor;
+    sphereActor->SetMapper(sphereMapper);
+    sphereActor->SetUserTransform(transform); // Aplica la posición
+    sphereActor->GetProperty()->SetColor(colors->GetColor3d("Banana").GetData()); // Color distinto para diferenciarla
+
+    // Crea la escena y añade los actores
     vtkNew<vtkRenderer> renderer;
-    renderer->AddActor(cylinderActor);
+    renderer->AddActor(cylinderActor); // llamando a los protegonistas
+    renderer->AddActor(sphereActor); // llamando a la esfera
     renderer->SetBackground(colors->GetColor3d("MidnightBlue").GetData());
 
-    // 6. VENTANA DE RENDERIZADO (Render Window): La ventana del SO donde se dibuja todo
+    // Ventana de renderizado
     vtkNew<vtkRenderWindow> renderWindow;
     renderWindow->SetSize(600, 600);
     renderWindow->AddRenderer(renderer);
     renderWindow->SetWindowName("Primer Ejemplo VTK - Cilindro");
 
-    // 7. INTERACTOR: Permite usar el ratón para rotar/hacer zoom en la escena
+    // Permite usar el raton
     vtkNew<vtkRenderWindowInteractor> renderWindowInteractor;
     renderWindowInteractor->SetRenderWindow(renderWindow);
 
